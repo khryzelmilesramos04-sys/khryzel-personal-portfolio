@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khryzel Miles Ramos | Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #10111d;
+            color: #f5f3ff;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #191b2c;
+            padding: 20px 8%;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #38364c;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #b49aff;
+        }
+
+        nav a {
+            color: #f5f3ff;
+            text-decoration: none;
+            margin-left: 18px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #b49aff;
+        }
+
+        section {
+            padding: 80px 10%;
+            scroll-margin-top: 70px;
+        }
+
+        .hero {
+            min-height: 550px;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin: 15px 0;
+        }
+
+        .hero h1 span,
+        h2 span {
+            color: #b49aff;
+        }
+
+        .hero p,
+        .intro {
+            color: #b9b6ca;
+            max-width: 700px;
+        }
+
+        .label {
+            color: #b49aff;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #b49aff;
+            color: #171326;
+            padding: 12px 22px;
+            margin-top: 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        h2 {
+            font-size: 35px;
+            margin: 10px 0 20px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #191b2c;
+            padding: 25px;
+            border: 1px solid #38364c;
+            border-radius: 12px;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #e1d6ff;
+        }
+
+        .card p {
+            color: #b9b6ca;
+        }
+
+        .timeline {
+            border-left: 2px solid #b49aff;
+            padding-left: 25px;
+            margin-top: 30px;
+        }
+
+        .timeline-item {
+            margin-bottom: 30px;
+        }
+
+        .timeline-item h3 {
+            color: #e1d6ff;
+        }
+
+        .timeline-item p {
+            color: #b9b6ca;
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+
+        .skills span {
+            background: #292640;
+            color: #e1d6ff;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        pre {
+            background: #090a12;
+            color: #ded9f5;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #38364c;
+            overflow-x: auto;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-top: 20px;
+            white-space: pre;
+        }
+
+        .note {
+            color: #b9b6ca;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        footer {
+            background: #191b2c;
+            text-align: center;
+            padding: 25px;
+            color: #b9b6ca;
+            border-top: 1px solid #38364c;
+        }
+
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                margin: 5px;
+                display: inline-block;
+            }
+
+            .hero h1 {
+                font-size: 36px;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            section {
+                padding: 60px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">KMR.</div>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#java">Java Code</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div>
+        <p class="label">BS Information Technology Student</p>
+
+        <h1>Hello, I'm <span>Khryzel Miles Ramos.</span></h1>
+
+        <p>
+            Welcome to my personal portfolio! I am a first-year
+            Information Technology student who enjoys learning
+            new things and exploring the world of technology.
+            This website shares my background, skills, and
+            programming work.
+        </p>
+
+        <a href="#about" class="button">Explore My Portfolio</a>
+    </div>
+</section>
+
+<section id="about">
+    <p class="label">Get to know me</p>
+    <h2>About <span>Me</span></h2>
+
+    <p class="intro">
+        I am a college freshman taking Bachelor of Science in
+        Information Technology. I consider myself someone who
+        is still learning, growing, and discovering my abilities.
+        I enjoy spending time with my family, watching movies,
+        listening to music, and cooking. I believe that every
+        experience helps me become a better version of myself.
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Personal Information</h3>
+            <p><strong>Name:</strong> Khryzel Miles T. Ramos</p>
+            <p><strong>Course:</strong> BS Information Technology</p>
+            <p><strong>Year Level:</strong> First Year</p>
+            <p><strong>School:</strong> Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+        </div>
+
+        <div class="card">
+            <h3>A Little About Me</h3>
+            <p>
+                I value my family and the people who support me.
+                I am a caring person who enjoys learning,
+                experiencing new things, and improving myself.
+                I know that I still have a lot to learn, but
+                I am willing to work hard for my dreams.
+            </p>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <p class="label">My academic journey</p>
+    <h2>Educational <span>Background</span></h2>
+
+    <p class="intro">
+        My educational journey has helped me gain knowledge,
+        develop new skills, and prepare for my future.
+    </p>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <h3>College</h3>
+            <p>Our Lady of the Sacred Heart College of Guimba, Inc.</p>
+            <p>Bachelor of Science in Information Technology – First Year</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Senior High School</h3>
+            <p>Bonifacio Luz Natividad Educational Foundation, Inc. (BLUN)</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Junior High School</h3>
+            <p>Triala National High School</p>
+        </div>
+
+        <div class="timeline-item">
+            <h3>Elementary</h3>
+            <p>Guimba East Central School</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="skills">
+    <p class="label">What I can do</p>
+    <h2>My <span>Skills</span></h2>
+
+    <p class="intro">
+        These are some of the skills I have developed
+        through my studies, activities, and experiences.
+        I continue to practice and improve them as an IT student.
+    </p>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Technical Skills</h3>
+
+            <div class="skills">
+                <span>Basic Java</span>
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Computer Fundamentals</span>
+                <span>Problem Solving</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h3>Personal Skills</h3>
+
+            <div class="skills">
+                <span>Teamwork</span>
+                <span>Communication</span>
+                <span>Creativity</span>
+                <span>Time Management</span>
+                <span>Willingness to Learn</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="java">
+    <p class="label">CC102 Final Performance Task</p>
+    <h2>Java <span>Code</span></h2>
+
+    <p class="intro">
+        This is my Java program for Problem Number 167,
+        Second Largest Number Finder. It uses a one-dimensional
+        array to store 15 integers, finds the largest and
+        second-largest distinct values, and arranges the numbers
+        in descending order.
+    </p>
+
+    <pre><code>import java.util.Scanner;
+
+public class SecondLargestNumberFinder {
+    public static void main(String[] args) {
+
+        Scanner input = new Scanner(System.in);
+        int[] numbers = new int[15];
+
+        System.out.println("SECOND LARGEST NUMBER FINDER");
+        System.out.println("Enter 15 numbers from 0 to 100.");
+
+        for (int i = 0; i < numbers.length; i++) {
+            while (true) {
+                System.out.print("Enter number " + (i + 1) + ": ");
+
+                if (input.hasNextInt()) {
+                    int value = input.nextInt();
+
+                    if (value >= 0 && value <= 100) {
+                        numbers[i] = value;
+                        break;
+                    } else {
+                        System.out.println("Invalid number. Please enter a value from 0 to 100.");
+                    }
+                } else {
+                    System.out.println("Invalid input. Please enter a whole number.");
+                    input.next();
+                }
+            }
+        }
+
+        int largest = -1;
+        int secondLargest = -1;
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                secondLargest = largest;
+                largest = numbers[i];
+            } else if (numbers[i] < largest &&
+                       numbers[i] > secondLargest) {
+                secondLargest = numbers[i];
+            }
+        }
+
+        for (int i = 0; i < numbers.length - 1; i++) {
+            for (int j = 0; j < numbers.length - 1 - i; j++) {
+                if (numbers[j] < numbers[j + 1]) {
+                    int temp = numbers[j];
+                    numbers[j] = numbers[j + 1];
+                    numbers[j + 1] = temp;
+                }
+            }
+        }
+
+        System.out.println("\\n===== RESULTS =====");
+        System.out.println("Largest number: " + largest);
+
+        if (secondLargest == -1) {
+            System.out.println("No second-largest distinct value exists.");
+        } else {
+            System.out.println("Second-largest number: " + secondLargest);
+        }
+
+        System.out.println("\\nNumbers in descending order:");
+
+        for (int i = 0; i < numbers.length; i++) {
+            System.out.print(numbers[i] + " ");
+        }
+
+        System.out.println();
+        input.close();
+    }
+}</code></pre>
+
+    <p class="note">
+        Problem 167 – Second Largest Number Finder | CC102
+    </p>
+</section>
+
+<section id="contact">
+    <p class="label">Let's connect</p>
+    <h2>Contact <span>Information</span></h2>
+
+    <div class="card">
+        <h3>Email Address</h3>
+        <p>Add your active email address here.</p>
+
+        <br>
+
+        <h3>GitHub Account</h3>
+        <p>Add your public GitHub profile link here.</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Khryzel Miles T. Ramos</p>
+    <p>Personal Portfolio | BS Information Technology</p>
+</footer>
+
+</body>
+</html>
+
+        
